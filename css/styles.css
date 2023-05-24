@@ -390,13 +390,6 @@ ul{
     flex-direction: row;
     height: 300px;
 }
-.decale{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    width: 1000px;
-    height: 500px;
-    margin-left: 70px;
-}
 .ecrit{
     display: flex;
     background-color: white;
@@ -544,14 +537,14 @@ ul{
 
 }
 
-.meslistes ul{
+.meslistes ol{
     display: flex;
     flex-direction: column;
-
+    font-family: 'Montserrat', sans-serif;
+    color: #272727;
 }
 
 /*Footer */
-
 .pourlefooter{
     display: flex;
     background-color: #f2f2f2;
