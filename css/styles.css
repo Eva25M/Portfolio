@@ -56,40 +56,6 @@ header{
     font-family: 'Montserrat', sans-serif;
 }
 
-/*BARRE DE RECHERCHE
-.tourbarrederecherche{
-    display: flex;
-    width: 33%;
-    background-color: white;
-    justify-content: end;
-}
-.barrederechercheheader{
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
-    height: 25px; 
-}
-.barrederechercheheader input[type="text"] {
-    flex: 1;
-    border: none;
-    border-radius: 50px;
-    padding: 10px;
-    margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-.barrederechercheheader button[type="submit"] {
-    background-image: url(loupe-noir.png);
-    background-size: cover;
-    border: none;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    cursor: pointer; 
-}*/
 
 /* BARRE NAVIGATION*/
 .boxnavigation {
@@ -141,10 +107,6 @@ header{
 }
 
 /*EN GENERAL*/
-h5{
-    display: flex;
-    font-size: 15px
-}
 h4{
     display: flex;
     margin-top: -25px;
@@ -418,20 +380,24 @@ ul{
     text-decoration: none;
     color: #272727;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 .presentationentreprise a:hover{
     text-decoration: underline;
     color:#C6A58E ;
     transition: all 0.3s ease;
 }
-
 .missions{
     display: flex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     flex-direction: row;
     height: 300px;
+}
+.decale{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 500px;
+    margin-left: 70px;
 }
 .ecrit{
     display: flex;
@@ -448,32 +414,7 @@ ul{
     align-items: center;
     justify-content: center;
 }
-.bouton{
-    display: flex;
-    background-color: #f2f2f2 ;
-    width: 200px;
-    height: 90px;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
-}
-.bouton a{
-    display: flex;
-    text-decoration: none;
-    color: #272727;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.bouton a:hover{
-    background-color: #C6A58E;
-    color: #fff;
-}
+
 .pourp a{
     text-decoration: none;
     color: #272727;
@@ -497,69 +438,77 @@ ul{
     margin-top: 110px;
     margin-bottom: 0px;
 }
-.mesprojets{
+.pics-container .pic:hover> .deletebg { 
+    opacity: 0.8;
+}
+.deletebg { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1; opacity: 0;
+    background-color: #C6A58E;
+    border-radius: 25px; 
+    transition: all 0.6s;
+
+}
+.deletebq::after {
+    content: '+';
+    position: absolute; 
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%) rotate (45deg );
+}
+.deletebg h5{
     display: flex;
-    background-color: white;
-    width: 100%; /*largeur*/
-    height: 450px;/*hauteur*/
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 20%;
+}
+.deletebg p{
+    display: flex;
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    object-fit: cover;
+
+}
+.pics-container .pic { 
+    background-color: rgb(255, 255, 255);
+    width: 85%; /*largeur*/
+    height: 77%;
+    cursor: pointer;
+    transition: all 0.35; 
+    position: relative;
+
+}
+.pics-container { 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 450px;
+    gap: 20px;
     justify-content: space-around;
     align-items: center;
-    margin-top: -20px;
-}
-.premier{
-    display: flex;
-    background-color: white;
-    width: 33%;
-    height: 90%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.texte{
-    display: flex;
-    background-color: white;
-    width: 80%;
-    height: 60px;
-    margin-bottom: 10px;
-    justify-content: center;
-    font-size: 30px;
-    text-decoration:underline ;
-    color: #272727;
-}
-.projet{
-    display: flex;
-    background-color: #f2f2f2;
-    width: 80%;
-    height: 300px;
-    border-radius: 20px;
-    transition: all 0.2s ease;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
-
-}
-.projet:hover{
-    border: #C6A58E solid 4px;
-    box-sizing: border-box;
-}
-.deuxieme{
-    display: flex;
-    background-color: white;
-    width: 33%;
-    height: 90%;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-.troisieme{
-    display: flex;
-    background-color: white;
-    width: 33%;
-    height: 90%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.pics-container pic:hover {
+    transform: translated(Opx, 0px,Opx) scale3d(1.2, 1.2, 1) rotate(0deg) rotateY (Odeg) rotateZ(0deg) skew (Odeg, Odeg) ;
+    transform-style: preserve-3d;
 }
-
 
 /* MA VEILLE*/
 .titreveille {

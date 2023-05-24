@@ -1,0 +1,122 @@
+
+/*BARRE DE RECHERCHE
+.tourbarrederecherche{
+    display: flex;
+    width: 33%;
+    background-color: white;
+    justify-content: end;
+}
+.barrederechercheheader{
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 25px; 
+}
+.barrederechercheheader input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.barrederechercheheader button[type="submit"] {
+    background-image: url(loupe-noir.png);
+    background-size: cover;
+    border: none;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; 
+}*/
+
+
+.titreprojets {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.mesprojets{
+    display: flex;
+    background-color: white;
+    width: 100%; /*largeur*/
+    height: 450px;/*hauteur*/
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+.premier{
+    display: flex;
+    position: relative;
+    background-color: white;
+    width: 33%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.texte{
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 60px;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration:underline ;
+    color: #272727;
+}
+.projet{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+.projet:hover{
+    border: #C6A58E solid 4px;
+    box-sizing: border-box;
+}
+.deuxieme{
+    display: flex;
+    position: relative;
+    background-color: white;
+    width: 33%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.troisieme{
+    display: flex;
+    position: relative;
+    background-color: white;
+    width: 33%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+    display: flex;
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
