@@ -1,0 +1,557 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* HEADER */
+header{
+    display: flex;
+    background-color:white;
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.pourmaider{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+}
+.home{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+.imgheader{
+    display: flex;
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    padding-left: 15px;
+    align-items: center;
+}
+.titreheader{
+    display: flex;
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titreheader h1{
+    font-size: 40px;
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 45px;
+}
+.boxnavigation a{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* BARRE NAVIGATION*/
+.boxnavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.boxnavigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}  
+.boxnavigation li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.boxnavigation a {
+    color: #272727;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}  
+.boxnavigation a:hover {
+    background-color: #C6A58E;
+    color: #fff;
+}
+  
+/* POUR LE TITRE AVEC LES LIGNES */
+.title-line {
+    flex: 1;
+    height: 1px;
+    background-color: #272727;
+    margin: 0 20px;
+    position: relative;
+}
+
+/*EN GENERAL*/
+h4{
+    display: flex;
+    margin-top: -25px;
+    font-size: 20px;
+    color:#C7998C ;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    font-size: 23px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1.5px solid #272727;
+    border-bottom: 1.5px solid #272727;
+    padding: 20px;
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    display: flex;
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    display: flex;
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;    
+    list-style: disc;
+
+}
+/*A Propos de moi*/
+.jesaispas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.titreapropos {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.monparcours{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    width: 45%;
+    text-align: justify;
+}
+/*MES COMPETENCES*/
+.mescompetences{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    width: 45%;
+}
+.mescompetencespoints{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.boxrouge {
+    display: flex;  
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    flex-direction: row;
+}
+.boxtextecompetence{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.boxnomcompetences{
+    display: flex;
+    background-color: rgb(255, 255, 255);    
+}
+.boxnomcompetences h3{
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+}
+.lesptitspoints {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
+.labarre{
+    display: flex;
+    background-color: white;  
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.empty{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #C7998C;
+    border: #997a72 solid 1px;
+    margin-right: 2px;
+}
+.filled {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #42322d;
+    border: #5f4a44 solid 1px;
+    margin-right: 2px;
+}
+  
+/* Mon CV et Ma Lettre de motivation */
+.bonus{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-top: 50px;
+}
+.bonus a{
+    display: flex;
+    text-decoration: none;
+    color: #272727;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.moncv{
+    display: flex;
+    background-color:#f2f2f2 ;
+    width: 200px;
+    height: 90px;
+    border-radius: 20px;    
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+}
+.moncv:hover{
+    border: #C6A58E solid 4px;
+    box-sizing: border-box;
+}
+.lettredemotivation{
+    display: flex;
+    background-color:#f2f2f2 ;
+    width: 200px;
+    height: 90px;
+    border-radius: 20px;    
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+.lettredemotivation:hover{
+    border: #C6A58E solid 4px;
+    box-sizing: border-box;
+}
+.tableaudesynthese{
+    display: flex;
+    background-color:#f2f2f2 ;
+    width: 200px;
+    height: 90px;
+    border-radius: 20px;    
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+.tableaudesynthese:hover{
+    border: #C6A58E solid 4px;
+    box-sizing: border-box;
+}
+
+/*ECOLE*/
+.titreecole {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.btssiotexte{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+/* Les options du bts sio */
+.lesoptions{
+    display: flex;
+    background-color: white;
+    margin-top: 50px;
+}
+.option{
+    display: flex;
+    background-color:#f2f2f2 ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 300px;
+    border-radius: 20px;    
+    margin-right: 50px;
+    border: 1px solid #C6A58E;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+.option a{
+    display: flex;
+    text-decoration: none;
+    color: #272727;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.option p{
+    display: flex;
+    text-decoration: none;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+
+
+/*ENTREPRISE*/
+.titreentreprise {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.titreentreprise a{
+    display: flex;
+}
+.presentationentreprise{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+.presentationentreprise ul{
+    display: flex;
+    flex-direction: column;
+}
+.presentationentreprise a{
+    text-decoration: none;
+    color: #272727;
+    font-family: 'Montserrat', sans-serif;
+}
+.presentationentreprise a:hover{
+    text-decoration: underline;
+    color:#C6A58E ;
+    transition: all 0.3s ease;
+}
+.missions{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    height: 300px;
+}
+.ecrit{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 70%;
+}
+
+.documents{
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pourp a{
+    text-decoration: none;
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.pourp a:hover{
+    color:#C6A58E ;
+    transition: all 0.3s ease;
+
+}
+
+/* MES PROJETS*/
+.titreprojets {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 0px;
+}
+.pics-container .pic:hover> .deletebg { 
+    opacity: 0.8;
+}
+.deletebg { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1; opacity: 0;
+    background-color: #C6A58E;
+    border-radius: 25px; 
+    transition: all 0.6s;
+
+}
+.deletebq::after {
+    content: '+';
+    position: absolute; 
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%) rotate (45deg );
+}
+.deletebg h5{
+    display: flex;
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 20%;
+}
+.deletebg p{
+    display: flex;
+    color: #272727;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    object-fit: cover;
+
+}
+.pics-container .pic { 
+    background-color: rgb(255, 255, 255);
+    width: 85%; /*largeur*/
+    height: 77%;
+    cursor: pointer;
+    transition: all 0.35; 
+    position: relative;
+
+}
+.pics-container { 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 450px;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+.pics-container pic:hover {
+    transform: translated(Opx, 0px,Opx) scale3d(1.2, 1.2, 1) rotate(0deg) rotateY (Odeg) rotateZ(0deg) skew (Odeg, Odeg) ;
+    transform-style: preserve-3d;
+}
+.pic a{
+    color: black;
+}
+
+/* MA VEILLE*/
+.titreveille {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: px;
+    margin-bottom: 0px;
+}
+.veilletechnologique{
+    display: flex;
+    flex-direction: column;
+}
+.pourp{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.meslistes{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 70%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border: 1px solid #C6A58E;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+
+.meslistes ol{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #272727;
+}
+
+/*Footer */
+.pourlefooter{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px 40px 0% 0%;
+}
